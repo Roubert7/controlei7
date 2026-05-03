@@ -6,15 +6,15 @@
     <title>Controlei7 - Gestão Financeira com Inteligência Artificial</title>
     <meta name="description" content="Automatize suas finanças com o Controlei7. A única planilha inteligente que lê seus extratos com IA e roda no seu Google Drive.">
     
-    <!-- Google Fonts: Inter (Estilo Apple, minimalista e elegante) -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Ícones Phosphor (Modernos e elegantes) -->
+    <!-- Ícones Phosphor -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <!-- Tailwind CSS (Framework para estilização rápida e moderna) -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -51,7 +51,6 @@
     </script>
 
     <style>
-        /* Animações de Entrada (Scroll) */
         .fade-up {
             opacity: 0;
             transform: translateY(30px);
@@ -62,7 +61,6 @@
             transform: translateY(0);
         }
 
-        /* Efeito de Vidro (Glassmorphism) */
         .glass {
             background: rgba(30, 30, 30, 0.6);
             backdrop-filter: blur(12px);
@@ -70,7 +68,6 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Degradê de Texto Neon */
         .text-gradient {
             background: linear-gradient(to right, #ffffff, #00FF00);
             -webkit-background-clip: text;
@@ -96,6 +93,7 @@
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#beneficios" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Recursos</a>
+                    <a href="#telas" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">O Sistema</a>
                     <a href="#depoimentos" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Depoimentos</a>
                     <a href="#faq" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">FAQ</a>
                 </div>
@@ -109,13 +107,12 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-        <!-- Elementos de fundo -->
+    <section class="relative pt-32 pb-16 lg:pt-48 lg:pb-24 overflow-hidden">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-neon opacity-20 blur-[120px] rounded-full pointer-events-none"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neon/30 bg-neon/10 text-neon text-sm font-medium mb-8 fade-up">
-                <i class="ph-fill ph-sparkle"></i> Alimentado por Google Gemini IA
+                <i class="ph-fill ph-sparkle"></i> Agora ficou fácil organizar suas finanças!
             </div>
             
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 fade-up" style="transition-delay: 100ms;">
@@ -124,38 +121,53 @@
             </h1>
             
             <p class="mt-4 max-w-2xl text-lg md:text-xl text-gray-400 mx-auto mb-10 fade-up" style="transition-delay: 200ms;">
-                Pare de ser escravo das planilhas. Importe seus extratos em segundos, deixe a Inteligência Artificial classificar seus gastos e guarde tudo com segurança no seu próprio Google Drive.
+                Pare de ser escravo das planilhas manuais. Importe seus extratos em segundos, deixe a Inteligência Artificial classificar seus gastos e guarde tudo com segurança no seu próprio Google Drive.
             </p>
+
+            <!-- Cronômetro Hero (Topo) -->
+            <div class="flex flex-col items-center justify-center mb-10 fade-up" style="transition-delay: 250ms;">
+                <div class="inline-flex items-center gap-2 text-red-400 font-bold text-sm tracking-wide mb-3">
+                    <i class="ph-bold ph-clock-countdown text-lg"></i> OFERTA ENCERRA EM BREVE
+                </div>
+                <div class="flex justify-center gap-3">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-dark-900 border border-neon/50 text-white text-3xl font-bold py-2 w-16 rounded-xl shadow-inner timer-hours">07</div>
+                        <span class="text-[10px] text-gray-400 font-bold mt-1 tracking-widest">HORAS</span>
+                    </div>
+                    <div class="text-3xl text-neon font-bold pt-1">:</div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-dark-900 border border-neon/50 text-white text-3xl font-bold py-2 w-16 rounded-xl shadow-inner timer-minutes">59</div>
+                        <span class="text-[10px] text-gray-400 font-bold mt-1 tracking-widest">MINS</span>
+                    </div>
+                    <div class="text-3xl text-neon font-bold pt-1">:</div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-dark-900 border border-neon/50 text-white text-3xl font-bold py-2 w-16 rounded-xl shadow-inner timer-seconds">59</div>
+                        <span class="text-[10px] text-gray-400 font-bold mt-1 tracking-widest">SEGS</span>
+                    </div>
+                </div>
+            </div>
             
-            <div class="flex flex-col sm:flex-row justify-center gap-4 fade-up" style="transition-delay: 300ms;">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 fade-up mb-16" style="transition-delay: 300ms;">
                 <a href="#oferta" class="bg-neon text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 hover:shadow-[0_0_25px_rgba(0,255,0,0.5)] transition-all duration-300 flex items-center justify-center gap-2">
                     Garantir Meu Acesso <i class="ph-bold ph-arrow-right"></i>
                 </a>
-                <a href="#beneficios" class="px-8 py-4 rounded-full font-bold text-lg border border-gray-600 hover:border-gray-400 hover:bg-gray-800 transition-all duration-300 flex items-center justify-center">
+                <a href="#telas" class="px-8 py-4 rounded-full font-bold text-lg border border-gray-600 hover:border-gray-400 hover:bg-gray-800 transition-all duration-300 flex items-center justify-center">
                     Ver como funciona
                 </a>
             </div>
 
-            <!-- MOCKUP IMAGEM PLACEHOLDER -->
-            <div class="mt-20 relative mx-auto w-full max-w-5xl fade-up" style="transition-delay: 400ms;">
-                <div class="aspect-video bg-dark-800 rounded-2xl border border-gray-700 shadow-2xl overflow-hidden flex items-center justify-center animate-float relative">
-                    <!-- Substitua o texto abaixo pela tag img real da sua planilha -->
-                    <div class="text-center text-gray-500">
-                        <i class="ph-light ph-image text-6xl mb-2"></i>
-                        <p></p>
-                    </div>
-                    
-                    <!-- Decoração UI Flutuante -->
-                    <div class="absolute -right-6 -bottom-6 bg-dark-700 border border-gray-600 p-4 rounded-xl shadow-lg flex items-center gap-4 hidden md:flex">
-                        <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-neon text-2xl">
-                            <i class="ph-fill ph-check-circle"></i>
-                        </div>
-                        <div class="text-left">
-                            <p class="text-sm text-gray-400">Extrato importado</p>
-                            <p class="font-bold">48 itens categorizados pela IA</p>
-                        </div>
-                    </div>
+            <!-- Contador de Prova Social Animado -->
+            <div class="flex flex-col items-center justify-center py-8 border-t border-white/5 fade-up" style="transition-delay: 400ms;">
+                <div class="flex -space-x-4 rtl:space-x-reverse mb-4">
+                    <!-- Avatares ilustrativos -->
+                    <div class="w-12 h-12 rounded-full border-2 border-dark-900 bg-gray-600 flex items-center justify-center font-bold text-sm">R</div>
+                    <div class="w-12 h-12 rounded-full border-2 border-dark-900 bg-gray-500 flex items-center justify-center font-bold text-sm">M</div>
+                    <div class="w-12 h-12 rounded-full border-2 border-dark-900 bg-gray-700 flex items-center justify-center font-bold text-sm">A</div>
+                    <div class="w-12 h-12 rounded-full border-2 border-dark-900 bg-neon text-black flex items-center justify-center font-bold text-sm"><i class="ph-bold ph-plus"></i></div>
                 </div>
+                <p class="text-xl text-gray-300">
+                    Junte-se a <span class="font-bold text-neon text-3xl" id="user-counter">0</span> usuários com a vida financeira tranquila.
+                </p>
             </div>
         </div>
     </section>
@@ -166,19 +178,19 @@
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 
                 <div class="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Ainda perdendo o seu domingo digitando gasto por gasto?</h2>
+                    <h2 class="text-3xl font-bold mb-6 leading-tight">Ainda perdendo o seu domingo digitando gasto por gasto?</h2>
                     <ul class="space-y-4">
                         <li class="flex items-start gap-3 text-gray-400">
                             <i class="ph-fill ph-x-circle text-red-500 text-xl mt-0.5"></i>
-                            <span><b>Planilhas amadoras</b> que quebram fórmulas e tomam horas do seu dia.</span>
+                            <span><b>Planilhas antigas</b> que quebram fórmulas, são lentas e tomam horas do seu tempo livre.</span>
                         </li>
                         <li class="flex items-start gap-3 text-gray-400">
                             <i class="ph-fill ph-x-circle text-red-500 text-xl mt-0.5"></i>
-                            <span><b>Aplicativos de mercado</b> que vendem seus dados financeiros e enchem sua tela de anúncios de cartão de crédito.</span>
+                            <span><b>Aplicativos de mercado</b> que vendem seus dados financeiros e enchem sua tela de anúncios.</span>
                         </li>
                         <li class="flex items-start gap-3 text-gray-400">
                             <i class="ph-fill ph-x-circle text-red-500 text-xl mt-0.5"></i>
-                            <span><b>Esquecer de pagar boletos</b> e perder dinheiro com juros e multas por desorganização.</span>
+                            <span><b>Falta de clareza</b>, causando atrasos em boletos e perda de dinheiro com juros e multas desnecessárias.</span>
                         </li>
                     </ul>
                 </div>
@@ -189,7 +201,7 @@
                     <ul class="space-y-5">
                         <li class="flex items-start gap-3 text-gray-300">
                             <div class="p-1 rounded bg-neon/20"><i class="ph-bold ph-check text-neon"></i></div>
-                            <span>Você sobe o extrato e a <b>Inteligência Artificial</b> faz o trabalho braçal em segundos.</span>
+                            <span>Você sobe o extrato e a <b>Inteligência Artificial (Gemini)</b> lê e categoriza dezenas de transações em segundos.</span>
                         </li>
                         <li class="flex items-start gap-3 text-gray-300">
                             <div class="p-1 rounded bg-neon/20"><i class="ph-bold ph-check text-neon"></i></div>
@@ -197,7 +209,7 @@
                         </li>
                         <li class="flex items-start gap-3 text-gray-300">
                             <div class="p-1 rounded bg-neon/20"><i class="ph-bold ph-check text-neon"></i></div>
-                            <span>Sincronização com o <b>Google Agenda</b>. Nunca mais pague juros por esquecer o vencimento.</span>
+                            <span>Sincronização com o <b>Google Agenda</b> e alertas por e-mail para você nunca mais esquecer um vencimento.</span>
                         </li>
                     </ul>
                 </div>
@@ -206,117 +218,148 @@
         </div>
     </section>
 
-    <!-- FEATURES / RECURSOS -->
-    <section id="beneficios" class="py-24 relative">
+    <!-- SEÇÃO DE TELAS (POR DENTRO DO SISTEMA) -->
+    <section id="telas" class="py-24 relative bg-dark-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Um ecossistema completo, não apenas uma tabela.</h2>
-                <p class="text-gray-400 text-lg">Desenvolvido com a mesma tecnologia usada por grandes empresas, agora nas palmas da sua mão.</p>
+            <div class="text-center max-w-3xl mx-auto mb-20 fade-up">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Por dentro do Controlei<span class="text-neon">7</span></h2>
+                <p class="text-gray-400 text-lg">Veja como a interface foi desenhada para ser intuitiva, rápida e elegante.</p>
             </div>
 
+            <!-- Tela 1: Dashboard -->
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-24 fade-up">
+                <div class="flex-1 w-full relative">
+                    <div class="aspect-[4/3] bg-dark-800 rounded-2xl border border-gray-700 shadow-2xl flex items-center justify-center overflow-hidden group">
+                        <!-- Substitua pelo print real do Dashboard -->
+                        <div class="text-center text-gray-600 group-hover:scale-105 transition-transform duration-500">
+                            <i class="ph-light ph-image text-5xl mb-2"></i>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="w-12 h-12 rounded-full bg-neon/10 text-neon flex items-center justify-center text-2xl mb-6">
+                        <i class="ph-fill ph-presentation-chart"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">Dashboard Inteligente</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Tenha uma visão clara e instantânea do seu mês. Acompanhe suas receitas, despesas e saldo final com gráficos elegantes e de fácil leitura. Saiba exatamente para onde seu dinheiro está indo, separando gastos essenciais dos "desejos".
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tela 2: Importação IA -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-24 fade-up">
+                <div class="flex-1 w-full relative">
+                    <div class="aspect-[4/3] bg-dark-800 rounded-2xl border border-gray-700 shadow-2xl flex items-center justify-center overflow-hidden group">
+                        <!-- Substitua pelo print real da Tela de Importação -->
+                        <div class="text-center text-gray-600 group-hover:scale-105 transition-transform duration-500">
+                            <i class="ph-light ph-image text-5xl mb-2"></i>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="w-12 h-12 rounded-full bg-neon/10 text-neon flex items-center justify-center text-2xl mb-6">
+                        <i class="ph-fill ph-brain"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">A Mágica da Importação (IA)</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Esqueça a digitação manual. Basta exportar o arquivo CSV do seu banco e anexar no sistema. O Controlei7 usa o cérebro da inteligência artificial do Google para ler, limpar nomes confusos de maquininhas e categorizar tudo em segundos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tela 3: WebApp Mobile -->
+            <div class="flex flex-col md:flex-row items-center gap-12 fade-up">
+                <div class="flex-1 w-full relative">
+                    <div class="aspect-[4/3] bg-dark-800 rounded-2xl border border-gray-700 shadow-2xl flex items-center justify-center overflow-hidden group">
+                        <!-- Substitua pelo print real do WebApp no Celular -->
+                        <div class="text-center text-gray-600 group-hover:scale-105 transition-transform duration-500">
+                            <i class="ph-light ph-device-mobile text-5xl mb-2"></i>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="w-12 h-12 rounded-full bg-neon/10 text-neon flex items-center justify-center text-2xl mb-6">
+                        <i class="ph-fill ph-rocket-launch"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">WebApp Mobile Exclusivo</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Comprou um cafezinho na rua? Você não precisa esperar chegar em casa para lançar. O Controlei7 possui um formulário "Mobile First" super leve que abre como um app no seu celular. Lance gastos em menos de 10 segundos!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FEATURES / RECURSOS RÁPIDOS -->
+    <section id="beneficios" class="py-24 bg-dark-800 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Card 1 -->
-                <div class="bg-dark-800 p-8 rounded-2xl border border-gray-700 hover:border-neon/50 transition-all duration-300 hover:-translate-y-2 group fade-up">
-                    <div class="w-14 h-14 bg-dark-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon/10 transition-colors">
-                        <i class="ph-fill ph-magic-wand text-3xl text-neon"></i>
+                <!-- Card -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-gray-700 hover:border-neon/50 transition-all duration-300 hover:-translate-y-2 group fade-up">
+                    <div class="w-12 h-12 bg-dark-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon/10 transition-colors">
+                        <i class="ph-fill ph-scan text-2xl text-neon"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Importação com IA</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Suba o arquivo CSV do seu banco. O Google Gemini lê as linhas, limpa os nomes estranhos e categoriza cada gasto automaticamente.</p>
+                    <h3 class="text-lg font-bold mb-2">Leitor de Comprovantes</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Mandou um Pix? Envie o comprovante (PDF ou Imagem) e nosso robô extrai o recebedor, data e valor.</p>
                 </div>
-
-                <!-- Card 2 -->
-                <div class="bg-dark-800 p-8 rounded-2xl border border-gray-700 hover:border-neon/50 transition-all duration-300 hover:-translate-y-2 group fade-up" style="transition-delay: 100ms;">
-                    <div class="w-14 h-14 bg-dark-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon/10 transition-colors">
-                        <i class="ph-fill ph-scan text-3xl text-neon"></i>
+                <!-- Card -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-gray-700 hover:border-neon/50 transition-all duration-300 hover:-translate-y-2 group fade-up" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-dark-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon/10 transition-colors">
+                        <i class="ph-fill ph-calendar-check text-2xl text-neon"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Leitor de Comprovantes</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Mandou um Pix? Envie o comprovante (PDF ou Imagem) e nosso robô extrai o recebedor, data e valor, arquivando tudo no Drive.</p>
+                    <h3 class="text-lg font-bold mb-2">Contas Fixas & Agenda</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Cadastre contas uma única vez. O sistema lança mensalmente e cria alertas direto no seu Google Calendar.</p>
                 </div>
-
-                <!-- Card 3 -->
-                <div class="bg-dark-800 p-8 rounded-2xl border border-gray-700 hover:border-neon/50 transition-all duration-300 hover:-translate-y-2 group fade-up" style="transition-delay: 200ms;">
-                    <div class="w-14 h-14 bg-dark-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon/10 transition-colors">
-                        <i class="ph-fill ph-calendar-check text-3xl text-neon"></i>
+                <!-- Card -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-gray-700 hover:border-neon/50 transition-all duration-300 hover:-translate-y-2 group fade-up" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-dark-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon/10 transition-colors">
+                        <i class="ph-fill ph-envelope-open text-2xl text-neon"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Contas Fixas & Agenda</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Cadastre aluguel, internet e academia uma única vez. O sistema lança mensalmente e cria alertas direto no seu Google Calendar.</p>
+                    <h3 class="text-lg font-bold mb-2">Consultor (E-mail)</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Receba um relatório com o fechamento do mês. A IA analisa seus maiores gastos e te envia uma dica personalizada.</p>
                 </div>
-
-                <!-- Card 4 -->
-                <div class="bg-dark-800 p-8 rounded-2xl border border-gray-700 hover:border-neon/50 transition-all duration-300 hover:-translate-y-2 group fade-up" style="transition-delay: 300ms;">
-                    <div class="w-14 h-14 bg-dark-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon/10 transition-colors">
-                        <i class="ph-fill ph-envelope-open text-3xl text-neon"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Consultor Mensal (E-mail)</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Receba um relatório dia 01 com o fechamento do mês. A Inteligência Artificial analisa seus maiores gastos e te envia uma dica personalizada.</p>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="bg-dark-800 p-8 rounded-2xl border border-gray-700 hover:border-neon/50 transition-all duration-300 hover:-translate-y-2 group fade-up" style="transition-delay: 400ms;">
-                    <div class="w-14 h-14 bg-dark-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon/10 transition-colors">
-                        <i class="ph-fill ph-device-mobile text-3xl text-neon"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Mobile First (WebApp)</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Na rua? Use o formulário direto no celular. Rápido, leve e não ocupa memória. Lançamentos feitos na hora, sem complicação.</p>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="bg-dark-800 p-8 rounded-2xl border border-gray-700 hover:border-neon/50 transition-all duration-300 hover:-translate-y-2 group fade-up" style="transition-delay: 500ms;">
-                    <div class="w-14 h-14 bg-dark-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon/10 transition-colors">
-                        <i class="ph-fill ph-shield-check text-3xl text-neon"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Privacidade Absoluta</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">O sistema pertence a você. Ele roda 100% no seu Google Drive (Data Ownership). Nós não vemos e não vendemos seus dados.</p>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- COMO FUNCIONA (PASSO A PASSO) -->
-    <section class="py-24 bg-dark-800 border-y border-white/5">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-up">
-                <h2 class="text-3xl font-bold mb-4">Como a mágica acontece</h2>
-            </div>
-            
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4 relative">
-                <!-- Linha conectora (Desktop) -->
-                <div class="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gray-700 -z-0"></div>
-
-                <!-- Passo 1 -->
-                <div class="flex-1 text-center relative z-10 fade-up">
-                    <div class="w-16 h-16 mx-auto bg-dark-900 border-2 border-neon text-neon rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-[0_0_15px_rgba(0,255,0,0.2)]">1</div>
-                    <h4 class="font-bold text-lg mb-2">Configure 1 vez</h4>
-                    <p class="text-gray-400 text-sm px-4">Conecte sua conta do Google Drive e gere sua chave API gratuita em 3 minutos.</p>
+    <!-- SOBRE O AUTOR -->
+    <section class="py-24 bg-dark-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass rounded-3xl p-8 md:p-12 border border-gray-700 fade-up flex flex-col md:flex-row items-center gap-10">
+                <div class="w-48 h-48 rounded-full border-4 border-neon/30 overflow-hidden shrink-0">
+                    <!-- Substitua pela sua foto -->
+                    <div class="w-full h-full bg-dark-700 flex items-center justify-center text-gray-500">
+                        <i class="ph-fill ph-user text-6xl"></i>
+                    </div>
+                    <!-- Se tiver foto use: <img src="sua-foto.jpg" alt="Sérgio" class="w-full h-full object-cover"> -->
                 </div>
-
-                <!-- Passo 2 -->
-                <div class="flex-1 text-center relative z-10 fade-up" style="transition-delay: 200ms;">
-                    <div class="w-16 h-16 mx-auto bg-dark-900 border-2 border-neon text-neon rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-[0_0_15px_rgba(0,255,0,0.2)]">2</div>
-                    <h4 class="font-bold text-lg mb-2">Importe o Extrato</h4>
-                    <p class="text-gray-400 text-sm px-4">Faça o upload do arquivo CSV do seu banco na interface amigável do sistema.</p>
-                </div>
-
-                <!-- Passo 3 -->
-                <div class="flex-1 text-center relative z-10 fade-up" style="transition-delay: 400ms;">
-                    <div class="w-16 h-16 mx-auto bg-neon border-2 border-neon text-black rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-[0_0_20px_rgba(0,255,0,0.5)]"><i class="ph-bold ph-check"></i></div>
-                    <h4 class="font-bold text-lg mb-2">A IA Trabalha</h4>
-                    <p class="text-gray-400 text-sm px-4">O robô lê, limpa e categoriza dezenas de gastos em segundos, montando seus gráficos.</p>
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Quem sou eu?</h2>
+                    <p class="text-neon font-semibold mb-4">Sérgio — Criador do Controlei7</p>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Sou apaixonado por tecnologia, organização e em descomplicar o que parece difícil. Durante anos, vi pessoas desistirem de organizar suas finanças porque o processo de digitar gasto por gasto era exaustivo e monótono.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Foi por isso que desenvolvi o <b>Controlei7</b>. Uni a familiaridade das planilhas do Google com o poder da Inteligência Artificial moderna. Minha missão é devolver o seu tempo livre no fim de semana e te dar clareza absoluta sobre o seu dinheiro, com segurança e praticidade.
+                    </p>
                 </div>
             </div>
-         </div>
+        </div>
     </section>
 
     <!-- TESTIMONIALS / PROVA SOCIAL -->
-    <section id="depoimentos" class="py-24">
+    <section id="depoimentos" class="py-24 bg-dark-800 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-16 fade-up">O que dizem os usuários</h2>
+            <h2 class="text-3xl font-bold text-center mb-16 fade-up">Histórias reais de quem assumiu o controle</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <div class="bg-dark-800 p-6 rounded-2xl border border-gray-700 fade-up">
+                <div class="bg-dark-900 p-6 rounded-2xl border border-gray-700 fade-up">
                     <div class="flex gap-1 text-neon mb-4">
                         <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
@@ -330,7 +373,7 @@
                     </div>
                 </div>
 
-                <div class="bg-dark-800 p-6 rounded-2xl border border-gray-700 fade-up" style="transition-delay: 150ms;">
+                <div class="bg-dark-900 p-6 rounded-2xl border border-gray-700 fade-up" style="transition-delay: 150ms;">
                     <div class="flex gap-1 text-neon mb-4">
                         <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
@@ -344,7 +387,7 @@
                     </div>
                 </div>
 
-                <div class="bg-dark-800 p-6 rounded-2xl border border-gray-700 fade-up" style="transition-delay: 300ms;">
+                <div class="bg-dark-900 p-6 rounded-2xl border border-gray-700 fade-up" style="transition-delay: 300ms;">
                     <div class="flex gap-1 text-neon mb-4">
                         <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
@@ -365,44 +408,66 @@
     <!-- OFFER / CTA SECTION (CHECKOUT) -->
     <section id="oferta" class="py-24 bg-dark-900">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="relative glass rounded-3xl p-8 md:p-12 border border-neon/50 text-center overflow-hidden">
+            <div class="relative glass rounded-3xl p-8 md:p-12 border-2 border-neon text-center overflow-hidden shadow-[0_0_40px_rgba(0,255,0,0.15)]">
                 <!-- Efeito Glow BG -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-neon/5 blur-[100px] z-0"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-neon/10 blur-[100px] z-0"></div>
                 
                 <div class="relative z-10 fade-up">
-                    <span class="inline-block px-4 py-1.5 rounded-full bg-green-500/20 text-neon font-bold text-sm tracking-wider mb-6">OFERTA DE LANÇAMENTO</span>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Assuma o controle do seu dinheiro hoje.</h2>
-                    <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">Sem mensalidades ou taxas escondidas. Você paga uma vez, instala no seu Google Drive e tem acesso vitalício ao ecossistema completo.</p>
+                    <div class="inline-flex items-center gap-2 bg-red-500/20 text-red-400 font-bold px-4 py-2 rounded-full text-sm tracking-wide mb-6">
+                        <i class="ph-bold ph-clock-countdown text-lg"></i> OFERTA ENCERRA EM BREVE
+                    </div>
                     
-                    <div class="mb-8">
-                        <span class="text-gray-500 line-through text-lg block mb-1">De R$ 297,00</span>
+                    <h2 class="text-4xl md:text-5xl font-black mb-4 uppercase tracking-tight">Assuma o controle.</h2>
+                    <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">Acesso vitalício ao ecossistema completo. Sem mensalidades, sem taxas ocultas. Pagamento único.</p>
+                    
+                    <!-- CRONÔMETRO -->
+                    <div class="flex justify-center gap-4 mb-10">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-dark-900 border border-neon/50 text-white text-4xl font-bold py-3 w-20 rounded-xl shadow-inner timer-hours">07</div>
+                            <span class="text-xs text-gray-400 font-bold mt-2 tracking-widest">HORAS</span>
+                        </div>
+                        <div class="text-4xl text-neon font-bold pt-2">:</div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-dark-900 border border-neon/50 text-white text-4xl font-bold py-3 w-20 rounded-xl shadow-inner timer-minutes">59</div>
+                            <span class="text-xs text-gray-400 font-bold mt-2 tracking-widest">MINS</span>
+                        </div>
+                        <div class="text-4xl text-neon font-bold pt-2">:</div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-dark-900 border border-neon/50 text-white text-4xl font-bold py-3 w-20 rounded-xl shadow-inner timer-seconds">59</div>
+                            <span class="text-xs text-gray-400 font-bold mt-2 tracking-widest">SEGS</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-8 bg-dark-900/50 inline-block p-6 rounded-2xl border border-gray-700">
+                        <span class="text-gray-500 line-through text-lg block mb-1">De R$ 297,00 por apenas</span>
                         <div class="flex items-center justify-center gap-2">
                             <span class="text-2xl text-neon font-bold">12x de</span>
-                            <span class="text-6xl font-black text-white">R$ 10<span class="text-4xl">,03</span></span>
+                            <span class="text-7xl font-black text-white tracking-tighter">R$ 9<span class="text-5xl">,74</span></span>
                         </div>
                         <span class="text-gray-400 text-sm mt-2 block">ou R$ 97,00 à vista</span>
                     </div>
 
                     <!-- BOTÃO HOTMART AQUI -->
-                    <a href="https://pay.hotmart.com/B104317211T" target="_blank" class="block w-full sm:w-auto sm:inline-block bg-neon text-black px-10 py-5 rounded-full font-black text-xl hover:scale-105 hover:bg-white hover:text-black shadow-[0_0_30px_rgba(0,255,0,0.4)] transition-all duration-300 mb-6">
-                        COMPRAR AGORA
+                    <a href="https://pay.hotmart.com/SUA_ROTA_AQUI" target="_blank" class="block w-full sm:w-auto sm:inline-flex items-center justify-center gap-3 bg-neon text-black px-10 py-5 rounded-full font-black text-xl hover:scale-105 hover:bg-white hover:text-black shadow-[0_0_30px_rgba(0,255,0,0.5)] transition-all duration-300 mb-6 uppercase">
+                        Garantir Meu Acesso Agora <i class="ph-bold ph-arrow-right"></i>
                     </a>
 
-                    <div class="flex items-center justify-center gap-6 text-sm text-gray-400 mt-6">
-                        <div class="flex items-center gap-2"><i class="ph-fill ph-lock-key text-neon text-lg"></i> Pagamento Seguro</div>
+                    <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400 mt-4">
+                        <div class="flex items-center gap-2"><i class="ph-fill ph-lock-key text-neon text-lg"></i> Compra 100% Segura</div>
                         <div class="flex items-center gap-2"><i class="ph-fill ph-infinity text-neon text-lg"></i> Acesso Vitalício</div>
+                        <div class="flex items-center gap-2"><i class="ph-fill ph-envelope text-neon text-lg"></i> Acesso Imediato no E-mail</div>
                     </div>
                 </div>
             </div>
 
             <!-- Garantia -->
-            <div class="mt-12 flex items-center justify-center gap-6 fade-up">
-                <div class="w-20 h-20 bg-dark-800 rounded-full border border-gray-700 flex items-center justify-center shrink-0">
-                    <i class="ph-fill ph-shield-check text-4xl text-neon"></i>
+            <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-6 fade-up bg-dark-800 p-8 rounded-2xl border border-gray-700">
+                <div class="w-24 h-24 bg-dark-900 rounded-full border-2 border-neon flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(0,255,0,0.2)]">
+                    <i class="ph-fill ph-shield-check text-5xl text-neon"></i>
                 </div>
-                <div>
-                    <h4 class="font-bold text-lg">Risco Zero - Garantia de 7 Dias</h4>
-                    <p class="text-gray-400 text-sm">Se você não gostar do sistema, não se adaptar à IA ou por qualquer outro motivo, devolvemos 100% do seu dinheiro. Sem burocracia.</p>
+                <div class="text-center md:text-left">
+                    <h4 class="font-bold text-2xl mb-2 text-white">Risco Zero - Garantia de 7 Dias</h4>
+                    <p class="text-gray-400 text-base leading-relaxed">Nós confiamos tanto no poder do Controlei7 que assumimos todo o risco. Se você testar o sistema, importar seus extratos e não achar que ele é a melhor ferramenta que você já usou, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. Basta um clique na plataforma.</p>
                 </div>
             </div>
         </div>
@@ -411,51 +476,62 @@
     <!-- FAQ -->
     <section id="faq" class="py-24 bg-dark-800 border-t border-white/5">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12 fade-up">Dúvidas Frequentes</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 fade-up">Perguntas Frequentes</h2>
             
             <div class="space-y-4 fade-up">
                 
                 <!-- Pergunta 1 -->
-                <div class="border border-gray-700 rounded-xl overflow-hidden bg-dark-900 transition-all">
-                    <button class="faq-btn w-full px-6 py-5 text-left font-bold flex justify-between items-center focus:outline-none">
-                        <span>Preciso pagar mensalidade?</span>
-                        <i class="ph-bold ph-caret-down text-neon transition-transform duration-300"></i>
+                <div class="border border-gray-700 rounded-xl overflow-hidden bg-dark-900 transition-all hover:border-neon/50">
+                    <button class="faq-btn w-full px-6 py-5 text-left font-bold flex justify-between items-center focus:outline-none text-lg">
+                        <span>É seguro? Onde ficam meus dados?</span>
+                        <i class="ph-bold ph-caret-down text-neon transition-transform duration-300 text-xl"></i>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
-                        <p class="pb-5 text-gray-400 text-sm">Não! O Controlei7 é vendido com pagamento único e acesso vitalício. A IA do Google Gemini utilizada no sistema possui uma cota diária gratuita que atende 99% dos usuários comuns sem custos adicionais.</p>
+                        <p class="pb-5 text-gray-400 text-base leading-relaxed">Totalmente seguro. Seus dados ficam armazenados 100% no seu próprio Google Drive. Diferente de aplicativos de mercado, <b>nós não temos nenhum acesso</b> às suas finanças, não armazenamos cópias e não vendemos suas informações. A propriedade dos dados (Data Ownership) é inteiramente sua.</p>
                     </div>
                 </div>
 
                 <!-- Pergunta 2 -->
-                <div class="border border-gray-700 rounded-xl overflow-hidden bg-dark-900 transition-all">
-                    <button class="faq-btn w-full px-6 py-5 text-left font-bold flex justify-between items-center focus:outline-none">
-                        <span>Meus dados estão seguros? Vocês têm acesso?</span>
-                        <i class="ph-bold ph-caret-down text-neon transition-transform duration-300"></i>
+                <div class="border border-gray-700 rounded-xl overflow-hidden bg-dark-900 transition-all hover:border-neon/50">
+                    <button class="faq-btn w-full px-6 py-5 text-left font-bold flex justify-between items-center focus:outline-none text-lg">
+                        <span>Preciso pagar mensalidade? E as atualizações?</span>
+                        <i class="ph-bold ph-caret-down text-neon transition-transform duration-300 text-xl"></i>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
-                        <p class="pb-5 text-gray-400 text-sm">A segurança é o nosso maior pilar. Nós <b>não temos nenhum acesso</b> às suas planilhas, gastos ou e-mails. O Controlei7 roda integralmente dentro do SEU Google Drive. O banco de dados é 100% seu (Data Ownership).</p>
+                        <p class="pb-5 text-gray-400 text-base leading-relaxed">Não há mensalidades! O pagamento é único. Você paga uma vez e tem acesso vitalício à ferramenta. Além disso, todas as futuras atualizações e melhorias que fizermos no sistema serão disponibilizadas para você sem nenhum custo adicional.</p>
                     </div>
                 </div>
 
                 <!-- Pergunta 3 -->
-                <div class="border border-gray-700 rounded-xl overflow-hidden bg-dark-900 transition-all">
-                    <button class="faq-btn w-full px-6 py-5 text-left font-bold flex justify-between items-center focus:outline-none">
-                        <span>Funciona no celular?</span>
-                        <i class="ph-bold ph-caret-down text-neon transition-transform duration-300"></i>
+                <div class="border border-gray-700 rounded-xl overflow-hidden bg-dark-900 transition-all hover:border-neon/50">
+                    <button class="faq-btn w-full px-6 py-5 text-left font-bold flex justify-between items-center focus:outline-none text-lg">
+                        <span>Consigo usar e lançar gastos pelo celular?</span>
+                        <i class="ph-bold ph-caret-down text-neon transition-transform duration-300 text-xl"></i>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
-                        <p class="pb-5 text-gray-400 text-sm">Sim! O Controlei7 conta com um Web App (Formulário) projetado com layout 'Mobile First'. Você pode registrar gastos, consultar saldo e anexar comprovantes de forma super rápida direto pelo smartphone.</p>
+                        <p class="pb-5 text-gray-400 text-base leading-relaxed">Sim! O Controlei7 foi construído para facilitar seu dia a dia. Você terá um link exclusivo do seu WebApp para salvar na tela inicial do celular. Ele abre rápido, não ocupa memória e permite lançar gastos em segundos enquanto você ainda está na rua.</p>
                     </div>
                 </div>
 
                 <!-- Pergunta 4 -->
-                <div class="border border-gray-700 rounded-xl overflow-hidden bg-dark-900 transition-all">
-                    <button class="faq-btn w-full px-6 py-5 text-left font-bold flex justify-between items-center focus:outline-none">
-                        <span>Preciso saber programar para instalar?</span>
-                        <i class="ph-bold ph-caret-down text-neon transition-transform duration-300"></i>
+                <div class="border border-gray-700 rounded-xl overflow-hidden bg-dark-900 transition-all hover:border-neon/50">
+                    <button class="faq-btn w-full px-6 py-5 text-left font-bold flex justify-between items-center focus:outline-none text-lg">
+                        <span>E se eu não souber usar ou não gostar?</span>
+                        <i class="ph-bold ph-caret-down text-neon transition-transform duration-300 text-xl"></i>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
-                        <p class="pb-5 text-gray-400 text-sm">De forma alguma. Disponibilizamos um Guia de Início Rápido passo a passo ensinando a criar as pastas e colocar sua Chave de IA no painel visual. É só copiar e colar!</p>
+                        <p class="pb-5 text-gray-400 text-base leading-relaxed">O sistema conta com um "Guia de Início Rápido" e tutoriais passo a passo em vídeo. Mas, se por qualquer motivo você achar que a ferramenta não é para você, oferecemos uma garantia incondicional de 7 dias. Basta pedir o reembolso na Hotmart e devolveremos 100% do valor.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 5 -->
+                <div class="border border-gray-700 rounded-xl overflow-hidden bg-dark-900 transition-all hover:border-neon/50">
+                    <button class="faq-btn w-full px-6 py-5 text-left font-bold flex justify-between items-center focus:outline-none text-lg">
+                        <span>Vou precisar pagar pela Inteligência Artificial do Google?</span>
+                        <i class="ph-bold ph-caret-down text-neon transition-transform duration-300 text-xl"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+                        <p class="pb-5 text-gray-400 text-base leading-relaxed">Não! O Google disponibiliza uma cota diária gratuita (Tier Free) excelente para o Gemini, que atende com sobra o uso de uma pessoa normal gerenciando suas finanças. Ensinamos como gerar a sua própria chave gratuita no passo a passo inicial.</p>
                     </div>
                 </div>
 
@@ -475,39 +551,32 @@
                 <a href="#" class="text-gray-500 hover:text-neon transition-colors"><i class="ph-fill ph-instagram-logo text-2xl"></i></a>
                 <a href="#" class="text-gray-500 hover:text-neon transition-colors"><i class="ph-fill ph-envelope-simple text-2xl"></i></a>
             </div>
-            <div class="text-gray-600 text-xs">
+            <div class="text-gray-600 text-xs leading-relaxed">
                 &copy; <span id="year"></span> Controlei7. Todos os direitos reservados.<br>
-                Este site não é afiliado ao Google Inc. ou ao Facebook Inc.
+                Este site não é afiliado ao Google Inc., Facebook Inc. ou qualquer uma de suas entidades.
             </div>
         </div>
     </footer>
 
-    <!-- JAVASCRIPT (Animações e interações da página) -->
+    <!-- JAVASCRIPT -->
     <script>
-        // Set current year in footer
+        // Ano atual no footer
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Animação de Scroll (Fade Up)
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.15
-        };
-
+        // 1. Animação de Scroll (Fade Up)
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Anima só uma vez
+                    observer.unobserve(entry.target); 
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.fade-up').forEach((el) => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
 
-        // Efeito Blur na Navbar ao fazer scroll
+        // 2. Efeito Blur na Navbar
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
             if (window.scrollY > 20) {
@@ -519,24 +588,22 @@
             }
         });
 
-        // Lógica do Acordeão (FAQ)
+        // 3. Lógica do Acordeão (FAQ)
         const faqButtons = document.querySelectorAll('.faq-btn');
         faqButtons.forEach(btn => {
             btn.addEventListener('click', function() {
                 const content = this.nextElementSibling;
                 const icon = this.querySelector('i');
                 
-                // Fecha os outros (opcional)
-                /*
+                // Fecha as outras respostas ao abrir uma nova
                 faqButtons.forEach(otherBtn => {
                     if (otherBtn !== btn) {
                         otherBtn.nextElementSibling.style.maxHeight = null;
                         otherBtn.querySelector('i').classList.remove('rotate-180');
                     }
                 });
-                */
 
-                // Toggle o clicado
+                // Abre ou fecha a clicada
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
                     icon.classList.remove('rotate-180');
@@ -546,6 +613,83 @@
                 }
             });
         });
+
+        // 4. Contador Numérico de Usuários (Prova Social Animada)
+        function animateValue(id, start, end, duration) {
+            const obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                // Calcula o número atual e formata com ponto (ex: 2.145)
+                const currentNum = Math.floor(progress * (end - start) + start);
+                obj.innerHTML = currentNum.toLocaleString('pt-BR');
+                
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    obj.innerHTML = end.toLocaleString('pt-BR') + "+"; // Adiciona o '+' no final
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Dispara o contador quando aparecer na tela
+        const counterObserver = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateValue("user-counter", 0, 2145, 2000); // Conta de 0 a 2145 em 2 segundos
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        counterObserver.observe(document.getElementById('user-counter'));
+
+        // 5. Cronômetro Regressivo Evergreen (Sempre 8 horas na primeira visita)
+        function startTimer() {
+            // Tempo em segundos (8 horas = 28800)
+            let timeRemaining = 8 * 60 * 60 - 1; 
+
+            // Se quiser guardar no navegador pro usuário não bular dando F5 (opcional):
+            /*
+            if(localStorage.getItem('timer_controlei7')) {
+                timeRemaining = parseInt(localStorage.getItem('timer_controlei7'));
+            }
+            */
+
+            const displaysHours = document.querySelectorAll('.timer-hours');
+            const displaysMinutes = document.querySelectorAll('.timer-minutes');
+            const displaysSeconds = document.querySelectorAll('.timer-seconds');
+
+            const timer = setInterval(() => {
+                if (timeRemaining <= 0) {
+                    clearInterval(timer);
+                    displaysHours.forEach(el => el.textContent = "00");
+                    displaysMinutes.forEach(el => el.textContent = "00");
+                    displaysSeconds.forEach(el => el.textContent = "00");
+                    return;
+                }
+
+                let hours = Math.floor(timeRemaining / 3600);
+                let minutes = Math.floor((timeRemaining % 3600) / 60);
+                let seconds = timeRemaining % 60;
+
+                const hText = hours < 10 ? "0" + hours : hours;
+                const mText = minutes < 10 ? "0" + minutes : minutes;
+                const sText = seconds < 10 ? "0" + seconds : seconds;
+
+                displaysHours.forEach(el => el.textContent = hText);
+                displaysMinutes.forEach(el => el.textContent = mText);
+                displaysSeconds.forEach(el => el.textContent = sText);
+
+                timeRemaining--;
+                // localStorage.setItem('timer_controlei7', timeRemaining);
+            }, 1000);
+        }
+        
+        // Inicia cronômetro
+        startTimer();
     </script>
 </body>
 </html>
